@@ -26,19 +26,18 @@ button {
   outline: none;
   border-radius: 8px;
   cursor: pointer;
+
+  transition: all .5s ease-in-out;
 }
 button:hover {
-  transform: scale(1.06);
-  transition: ease-out 0.5s;
+  transform: scale(1.05);
 }
 @supports (scale: 1) {
   .button:hover {
-    transform: scale(1.06);
-    transition: ease-out 0.5s;
+    transform: scale(1.05);
   }
   .button.button-primary:hover {
-    transform: scale(1.06);
-    transition: ease-out 0.5s;
+    transform: scale(1.05);
   }
 }
 button:hover,
