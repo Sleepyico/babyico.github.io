@@ -2,7 +2,7 @@ var x = document.getElementById("annCxt");
 var y = document.getElementById("annCxtMb");
 var annCxt = [
   "💗 You can support and show me love in Ko-Fi.com/iconical",
-  "🛍️ Visit Shop.babyico.xyz and check my products. There's free things",
+  "🛍️ Visit Shop.babyico.xyz and check my products. There're free things",
   "🛒 So check my shop or my side merch. It's really cute",
 ];
 
