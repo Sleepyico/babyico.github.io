@@ -50,7 +50,7 @@
     <link rel="stylesheet" href="css/brands.css">
 
     
-    <script src="js/animateurl.js"></script>
+    <script src="js/animateurl.js" async></script>
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -71,6 +71,22 @@
 </head>
 
 <body>
+
+  <!-- Announcemnet Bar -->
+  <div class="announcement">
+    <div class="btnLeft" onclick="btnLeft()"><</div>
+   
+    <div id="annCxt" class="annCxt"></div>
+  
+    <div class="btnRight" onclick="btnRight()">></div>
+  </div>
+  
+  <div class="announcement2">
+    <div id="annCxtMb" class="annCxtMb"></div>
+  </div>
+
+  <!-- Image Background -->
+
   <img draggable="false" src="images/bg.png" id="myBack" class="myBg" alt="Background"></img>
 
   <!-- Primary Page Layout
@@ -81,7 +97,7 @@
 
 
         <!-- Your Image Here -->
-        <img draggable="false" src="images/icon.png" class="avatar" srcset="images/icon.svg 2x" alt="Iconical pfp">
+        <img draggable="false" src="images/icon.png" class="avatar" srcset="images/192x192.png 2x" alt="Iconical pfp">
 
         <!-- Title -->
         <h1 role="heading"><span class="purple letterss">L</span>aith</h1>
@@ -149,15 +165,15 @@
           ‿︵‿︵୨˚̣̣̣͙୧ -︵‿︵- ୨˚̣̣̣͙୧︵‿︵‿ 
          </p>
         
+         <!-- Generic Website -->
+         <a class="button button-last-fm" href="https://babyico.xyz/" target="_self" rel="noopener" role="button"><img class="icon" src="images/icons/generic-website.svg" alt="">Go Back</a><br>
 
+         <!------------------------------------------------------>
 
-       
-        <!------------------------------------------------------>
-
-        <!-- Generic Website -->
-        <a class="button button-last-fm" href="https://babyico.xyz/" target="_blank" rel="noopener" role="button"><img class="icon" src="images/icons/generic-website.svg" alt="">Go Back</a><br>
-
-        <br>
+         
+         
+         <!------------------------------------------------------>
+         <br>
          © 2023 <a href="https://github.com/babyico" target="_blank" rel="noopener" role="button">Laith</a> | Iconical#6558 <br><p><a href="privacy.html">Privacy Policy</a></p>
 
       </div>

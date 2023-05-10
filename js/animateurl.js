@@ -1,33 +1,58 @@
+var x = document.getElementById("annCxt");
+var y = document.getElementById("annCxtMb");
+var annCxt = [
+  "💗 You can support and show me love in Ko-Fi.com/iconical",
+  "🛍️ Visit Shop.babyico.xyz and check my products. There's free things",
+  "🛒 So check my shop or my side merch. It's really cute",
+];
 
-var rev = "fwd";
-function titlebar(val) {
-  var msg = "Iconical | Social Links | Babyico";
-  var res = " ";
-  var speed = 100;
-  var pos = val;
-  msg = "   " + msg + " ";
-  var le = msg.length;
-  if (rev == "fwd") {
-    if (pos < le) {
-      pos = pos + 1;
-      scroll = msg.substr(0, pos);
-      document.title = scroll;
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
-    } else {
-      rev = "bwd";
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
-    }
-  } else {
-    if (pos > 0) {
-      pos = pos - 1;
-      var ale = le - pos;
-      scrol = msg.substr(ale, le);
-      document.title = scrol;
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
-    } else {
-      rev = "fwd";
-      timer = window.setTimeout("titlebar(" + pos + ")", speed);
+var annCxtMb = [
+  "💗 You can support and show me love in Ko-Fi.com/iconical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🛍️ Visit Shop.babyico.xyz and check my products. There's free things&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🛒 So check my shop or my side merch. It's really cute",
+];
+
+x.innerHTML = annCxt[0];
+y.innerHTML = annCxtMb[0];
+var clock = setInterval(autoRight, 10000);
+
+function btnRight() {
+  clearInterval(clock);
+  clock = setInterval(autoRight, 10000);
+  for (var i = 0; i < annCxt.length; i++) {
+    if (x.innerHTML === annCxt[i]) {
+      if (x.innerHTML === annCxt[annCxt.length - 1]) {
+        x.innerHTML = annCxt[0];
+      } else {
+        x.innerHTML = annCxt[i + 1];
+      }
+      break;
     }
   }
 }
-titlebar(0);
+
+function btnLeft() {
+  clearInterval(clock);
+  clock = setInterval(autoRight, 10000);
+  for (var i = annCxt.length - 1; i >= 0; i--) {
+    if (x.innerHTML === annCxt[i]) {
+      if (x.innerHTML === annCxt[0]) {
+        x.innerHTML = annCxt[annCxt.length - 1];
+      } else {
+        x.innerHTML = annCxt[i - 1];
+      }
+      break;
+    }
+  }
+}
+
+function autoRight() {
+  for (var i = 0; i < annCxt.length; i++) {
+    if (x.innerHTML === annCxt[i]) {
+      if (x.innerHTML === annCxt[annCxt.length - 1]) {
+        x.innerHTML = annCxt[0];
+      } else {
+        x.innerHTML = annCxt[i + 1];
+      }
+      break;
+    }
+  }
+}

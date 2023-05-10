@@ -32,15 +32,31 @@
 /* For devices larger than 400px */
 @media (min-width: 400px) {
   .container {
-    width: 85%;
+    width: 100%;
     padding: 0;
+  }
+}
+
+/* For devices larger than 400px */
+@media (min-width: 300px) {
+  .container {
+    width: 100%;
+    padding: 0;
+  }
+  .button,
+  button {
+    width: 300px !important;
   }
 }
 
 /* For devices larger than 550px */
 @media (min-width: 550px) {
   .container {
-    width: 80%;
+    width: 100% !important;
+  }
+  .button,
+  button {
+    width: 358px !important;
   }
   .column,
   .columns {
@@ -211,6 +227,8 @@ hr {
   object-fit: cover;
   background-position: center;
   border-radius: 50%;
+
+  z-index: 99994444444444444444444444444;
 }
 
 /* open-sans-regular - vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic */
@@ -300,4 +318,73 @@ hr {
     /* Safari, Android, iOS */
       url("../fonts/open-sans-v34-vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic-800.svg#OpenSans")
       format("svg"); /* Legacy iOS */
+}
+
+/* Announcement Bar */
+.announcement,
+.announcement2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  text-align: center;
+  width: 100%;
+  background: black;
+  color: white;
+  margin: 0;
+  padding: 6px 0;
+  vertical-align: middle;
+  font-size: 15px;
+  font-family: Open Sans, Noto Sans TC, Noto Sans SC, Noto Sans, serif;
+}
+@media screen and (min-width: 700px) {
+  .announcement2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 641px) {
+  .announcement {
+    display: none;
+  }
+}
+
+.btnLeft,
+.btnRight {
+  z-index: 999;
+  display: inline-block;
+  cursor: pointer;
+  font-weight: bold;
+  background: black;
+  padding: 0 15px;
+
+  user-select: none; /* supported by Chrome and Opera */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+}
+
+.annCxt {
+  z-index: 998;
+  display: inline-block;
+  width: 650px;
+}
+
+@media screen and (max-width: 641px) {
+  .annCxtMb {
+    width: 80%;
+    white-space: nowrap;
+    position: relative;
+    animation: mymove 30s infinite; /*10s 13s 18s 20s 25s 30s*/
+    animation-timing-function: linear;
+  }
+
+  @keyframes mymove {
+    from {
+      left: 100%;
+    }
+    to {
+      left: -2300px;
+    } /*-300 -1200 -1400 -1500 -1800 -2300 -3300*/
+  }
 }
