@@ -27,7 +27,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
 
-  transition: all .5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 button:hover {
   transform: scale(1.05);
@@ -593,7 +593,7 @@ button:hover,
 /* Patreon */
 .button.button-patreon {
   color: #ffffff;
-  background-color: #ff424d;
+  background-image: linear-gradient(30deg,  #ff424d,#9c4e52, #ff424d);
 }
 .button.button-patreon:hover,
 .button.button-patreon:focus {
