@@ -1,14 +1,3 @@
-/* Table of contents
-––––––––––––––––––––––––––––––––––––––––––––––––––
-
-- Buttons
-- Brand Styles
-
-*/
-
-/* Buttons
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-
 .button,
 button {
   display: inline-block;
@@ -69,7 +58,6 @@ button:hover,
 /* Brand Styles
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-/* Default (this is great for your own brand color!) */
 .button.button-default {
   color: #ffffff;
   background-color: #2457f5;
@@ -499,7 +487,7 @@ button:hover,
 /* Last.fm */
 .button.button-last-fm {
   color: #ffffff;
-  background-color: #c2242c;
+  background-color: #392653;
 }
 .button.button-last-fm:hover,
 .button.button-last-fm:focus {
@@ -593,7 +581,7 @@ button:hover,
 /* Patreon */
 .button.button-patreon {
   color: #ffffff;
-  background-image: linear-gradient(30deg,  #ff424d,#9c4e52, #ff424d);
+  background-image: linear-gradient(30deg, #ff424d, #9c4e52, #ff424d);
 }
 .button.button-patreon:hover,
 .button.button-patreon:focus {
@@ -986,13 +974,11 @@ button:hover,
 /* YouTube */
 .button.button-yt {
   color: #212121;
-  background-image: linear-gradient(30deg,  #ffffff,#ffbeef, #f5f5f5);
-  
+  background-image: linear-gradient(30deg, #ffffff, #ffbeef, #f5f5f5);
 }
 .button.button-yt1 {
   color: #212121;
-  background-image: linear-gradient(30deg,  #ffffff,#daa2ff, #f5f5f5);
-  
+  background-image: linear-gradient(30deg, #ffffff, #daa2ff, #f5f5f5);
 }
 .button.button-yt:hover,
 .button.button-yt:focus {
@@ -1009,15 +995,16 @@ button:hover,
   filter: brightness(90%);
 }
 
-/* Personal CSS Customization */
+/* Personal CSS Customization 
+---------------------------------- */
 
 .purple {
-  color: #c2242c;
+  color: #af7cf7;
   font-weight: bolder;
 }
 .red,
 a {
-  color: #c2242c;
+  color: #a376e2;
   font-weight: bold;
 }
 
@@ -1028,6 +1015,11 @@ a {
 
 .paw {
   font-size: 20px;
+}
+
+.pclass {
+  font-weight: 700;
+  text-transform: uppercase;
 }
 
 .para1 {
@@ -1052,16 +1044,14 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #c2242c;
+  background-color: #392653;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  /* // color: red; */
-  background: #c2242c;
+  background: #392653;
 }
 
 ::selection {
-  /* // color: red; */
-  background: #c2242c;
+  background: #392653;
 }
