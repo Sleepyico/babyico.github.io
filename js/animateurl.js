@@ -3,11 +3,10 @@ var y = document.getElementById("annCxtMb");
 var annCxt = [
   "💗 You can support and show me love in Patreon.com/babyiconical",
   "🛍️ Visit my shop and check my products. There're free things",
-  "🛒 So check my shop or my side merch. It's really cute",
 ];
 
 var annCxtMb = [
-  "💗 You can support and show me love in Patreon.com/babyiconical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🛍️ Visit my shop and check my products. There's free things&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🛒 So check my shop or my side merch. It's really cute",
+  "💗 You can support and show me love in Patreon.com/babyiconical&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;🛍️ Visit my shop and check my products. There's free things&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;",
 ];
 
 x.innerHTML = annCxt[0];
