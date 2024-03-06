@@ -7,7 +7,7 @@
   transform: translate(-50%, -50%);
   background-color: #f9f9f9;
 
-  border: 1px solid #a376e2;
+  border: 1px solid #851118;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -51,13 +51,13 @@
   height: 0;
   border-top: 19px solid transparent;
   border-bottom: 19px solid transparent;
-  border-right: 19px solid #a376e2;
+  border-right: 19px solid #851118;
 }
 
 /* Makes the circle */
 .popup:after {
   content: "";
-  background-color: #a376e2;
+  background-color: #851118;
   border-radius: 50%;
   width: 4px;
   height: 4px;

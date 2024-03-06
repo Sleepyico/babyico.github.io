@@ -487,7 +487,7 @@ button:hover,
 /* Last.fm */
 .button.button-last-fm {
   color: #ffffff;
-  background-color: #392653;
+  background-color: #cf1b24;
 }
 .button.button-last-fm:hover,
 .button.button-last-fm:focus {
@@ -999,12 +999,12 @@ button:hover,
 ---------------------------------- */
 
 .purple {
-  color: #af7cf7;
+  color: #cf1b24;
   font-weight: bolder;
 }
 .red,
 a {
-  color: #a376e2;
+  color: #cf1b24;
   font-weight: bold;
 }
 
@@ -1057,14 +1057,14 @@ div .avatar {
 }
 
 ::-webkit-scrollbar-thumb {
-  background-color: #392653;
+  background-color: #851118;
 }
 
 ::-moz-selection {
   /* Code for Firefox */
-  background: #392653;
+  background: #851118;
 }
 
 ::selection {
-  background: #392653;
+  background: #851118;
 }
