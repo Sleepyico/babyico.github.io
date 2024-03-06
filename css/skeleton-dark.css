@@ -221,15 +221,6 @@ hr {
 10%-40%: Squircles
 50% (default): True circle
 */
-.avatar {
-  width: 96px;
-  height: 96px;
-  object-fit: cover;
-  background-position: center;
-  border-radius: 50%;
-
-  z-index: 99994444444444444444444444444;
-}
 
 /* open-sans-regular - vietnamese_latin-ext_latin_hebrew_greek-ext_greek_cyrillic-ext_cyrillic */
 @font-face {
